@@ -1,9 +1,11 @@
-
+import Game from "./component/Game"
 
 const App = () => {
+
+
   return (
     <>
-      App
+      <Game/>
     </>
   )
 }
