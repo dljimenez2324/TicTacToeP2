@@ -1,5 +1,5 @@
 // Import React and necessary hooks
-import React from 'react';
+// import React from 'react';
 
 // Define the props interface
 interface SquareProps {

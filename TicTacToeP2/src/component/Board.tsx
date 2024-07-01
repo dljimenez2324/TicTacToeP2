@@ -1,6 +1,6 @@
 // Import React component Square
 import Square from "./Square";
-import { useState } from "react";
+// import { useState } from "react";
 
 // Define the props interface
 interface BoardProps {
