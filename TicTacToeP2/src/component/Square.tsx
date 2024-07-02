@@ -16,7 +16,7 @@ const Square = ({ value, onSquareClick }:SquareProps) => {
   return (
     <>
       {/* Render a button representing a square */}
-      <button className="square" onClick={onSquareClick}>
+      <button className="square colorful-button" onClick={onSquareClick}>
         {value}
       </button>
     </>
