@@ -30,7 +30,7 @@ const Game = () => {
     setCurrentMove(nextMove); // Update the current move state
   };
 
-  // Create the list of moves for the game history
+  // Create the list of moves for the game history  I DONT KNOW HOW TO REMOVE SQUARES AND MAKE THIS WORK
   const moves = history.map((squares, move) => {
     const description = move > 0 ? `Go to move #${move}` : "Go to game start";
     return (
