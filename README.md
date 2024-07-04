@@ -1,4 +1,4 @@
-Challenge 1 Tic Tac Toe Game in React Part 2
+# Challenge 1 Tic Tac Toe Game in React Part 2
 Tic Tac Toe Game in React
 
 Name: David Jimenez
