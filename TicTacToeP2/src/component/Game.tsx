@@ -1,11 +1,13 @@
 // Import React and necessary hooks
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Board from "./Board";
 
 // Game component manages the history and current state of the game
 const Game = () => {
   // Initialize state to keep track of game history and the current move
-  const [history, setHistory] = useState<(string | null)[][]>([Array(9).fill(null)]);
+  const [history, setHistory] = useState<(string | null)[][]>([
+    Array(9).fill(null),
+  ]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0; // Determine if X is the next player
   const currentSquares = history[currentMove]; // Get the squares for the current move
@@ -39,16 +41,22 @@ const Game = () => {
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        {/* Render the Board component which takes in 3 props: xIsNext, squares, and onPlay */}
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+    <>
+      <div className="game">
+        <div className="game-board">
+          {/* Render the Board component which takes in 3 props: xIsNext, squares, and onPlay */}
+          <Board
+            xIsNext={xIsNext}
+            squares={currentSquares}
+            onPlay={handlePlay}
+          />
+        </div>
+        <div className="game-info">
+          {/* Render the list of moves */}
+          <ol>{moves}</ol>
+        </div>
       </div>
-      <div className="game-info">
-        {/* Render the list of moves */}
-        <ol>{moves}</ol>
-      </div>
-    </div>
+    </>
   );
 };
 
